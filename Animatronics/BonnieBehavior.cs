@@ -26,7 +26,7 @@ namespace FNAF1_Recreation.Animatronics
             Console.WriteLine("Bonnie Tick");
         }
 
-        public bool OnHour(int hour) => hour == 2 || hour == 3 || hour == 4;
+        public bool OnHour(int hour) => hour == 0 || hour == 0 || hour == 0;
 
         public Room OnMove(Room start) => path.Random();
     }
