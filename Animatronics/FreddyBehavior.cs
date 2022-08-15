@@ -13,10 +13,10 @@ namespace FNAF1_Recreation.Animatronics
             path = new AnimatronicPath();
 
             path.AddRoom(Room.rooms[1]);
-            path.AddRoom(Room.rooms[10]);
-            path.AddRoom(Room.rooms[9]);
-            path.AddRoom(Room.rooms[6]);
-            path.AddRoom(Room.rooms[7]);
+            path.AddRoom(Room.rooms[]);
+            path.AddRoom(Room.rooms[]);
+            path.AddRoom(Room.rooms[]);
+            path.AddRoom(Room.rooms[]);
 
         }
 
@@ -25,7 +25,7 @@ namespace FNAF1_Recreation.Animatronics
             Console.WriteLine("Freddy Tick");
         }
 
-        public bool OnHour(int _) => false;
+        public bool OnHour(int _) => true;
 
         public Room OnMove(Room start) { return path.NextRoom(); }
     }
