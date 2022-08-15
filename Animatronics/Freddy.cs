@@ -29,10 +29,10 @@ namespace FNAF1_Recreation.Animatronics
             path = new AnimatronicPath();
 
             path.AddRoom(Room.rooms[1]);
-            path.AddRoom(Room.rooms[10]);
-            path.AddRoom(Room.rooms[9]);
-            path.AddRoom(Room.rooms[6]);
-            path.AddRoom(Room.rooms[7]);
+            path.AddRoom(Room.rooms[]);
+            path.AddRoom(Room.rooms[]);
+            path.AddRoom(Room.rooms[]);
+            path.AddRoom(Room.rooms[]);
         }
 
         public void TryMove()
