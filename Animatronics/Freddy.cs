@@ -32,7 +32,7 @@ namespace FNAF1_Recreation.Animatronics
             path.AddRoom(Room.rooms[10]);
             path.AddRoom(Room.rooms[9]);
             path.AddRoom(Room.rooms[6]);
-            path.AddRoom(Room.rooms[7]);
+            path.AddRoom(Room.rooms[4]);
         }
 
         public void TryMove()
