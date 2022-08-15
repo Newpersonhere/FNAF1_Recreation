@@ -25,7 +25,7 @@ namespace FNAF1_Recreation.Animatronics
             Console.WriteLine("Freddy Tick");
         }
 
-        public bool OnHour(int _) => false;
+        public bool OnHour(int _) => true;
 
         public Room OnMove(Room start) { return path.NextRoom(); }
     }
