@@ -21,20 +21,20 @@ namespace FNAF1_Recreation.Animatronics
 
             startTime = 0f;
             phase = 1;
-            frozenDelay = 0f;
+            frozenDelay = 1f;
             chargeNum = 0;
             chargeStartTime = 0f;
         }
 
         public void OnTick(GameTime gameTime)
         {
-            if (Office.isCamUp && frozenDelay == 0f) frozenDelay = rand.RandFloat(0.83f, 16.67f);
+            if (Office.isCamUp && frozenDelay == 1f) frozenDelay = rand.RandFloat(0.83f, 16.67f);
 
             double gTTGTTS = gameTime.TotalGameTime.TotalSeconds;
             if (startTime + frozenDelay < gTTGTTS)
             {
                 startTime = gTTGTTS;
-                frozenDelay = 0f;
+                frozenDelay = 1f;
             }
 
             if (moveStartTime + movementOffset < gTTGTTS) TryMove();
@@ -42,7 +42,7 @@ namespace FNAF1_Recreation.Animatronics
 
         public void TryMove()
         {
-            if (frozenDelay == 0 && MovementOpportunity())
+            if (frozenDelay == 1 && MovementOpportunity())
             {
                 if (phase < 4) phase++;
                 else
