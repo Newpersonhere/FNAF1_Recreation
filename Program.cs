@@ -10,7 +10,7 @@
 @"             WARNING!
 
  This game contains flashing lights,
-loud noises, and lots of jumpscares!";
+loud noises, lots of jumpscares, and Lots of scary lore!";
 
 
         [System.STAThread]
